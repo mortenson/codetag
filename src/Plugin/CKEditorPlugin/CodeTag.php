@@ -18,7 +18,7 @@ class CodeTag extends CKEditorPluginBase {
    * {@inheritdoc}
    */
   public function getFile() {
-    return base_path() . 'libraries/codeTag/plugin.js';
+    return 'libraries/codeTag/plugin.js';
   }
 
   /**
@@ -35,7 +35,7 @@ class CodeTag extends CKEditorPluginBase {
     return array(
       'Code' => array(
         'label' => $this->t('CodeTag'),
-        'image' => base_path() . 'libraries/codeTag/icons/code.png',
+        'image' => 'libraries/codeTag/icons/code.png',
       ),
     );
   }
