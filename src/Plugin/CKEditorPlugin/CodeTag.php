@@ -3,7 +3,6 @@
 namespace Drupal\codetag\Plugin\CKEditorPlugin;
 
 use Drupal\ckeditor\CKEditorPluginBase;
-use Drupal\ckeditor\CKEditorPluginButtonsInterface;
 use Drupal\editor\Entity\Editor;
 
 /**
@@ -12,10 +11,9 @@ use Drupal\editor\Entity\Editor;
  * @CKEditorPlugin(
  *   id = "codeTag",
  *   label = @Translation("CodeTag"),
- *   module = "ckeditor"
  * )
  */
-class CodeTag extends CKEditorPluginBase implements CKEditorPluginButtonsInterface {
+class CodeTag extends CKEditorPluginBase {
   /**
    * {@inheritdoc}
    */
@@ -36,7 +34,7 @@ class CodeTag extends CKEditorPluginBase implements CKEditorPluginButtonsInterfa
   public function getButtons() {
     return array(
       'Code' => array(
-        'label' => t('CodeTag'),
+        'label' => $this->t('CodeTag'),
         'image' => base_path() . 'libraries/codeTag/icons/code.png',
       ),
     );
