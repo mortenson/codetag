@@ -16,5 +16,8 @@
   "support": {
     "issues": "http://drupal.org/project/issues/codetag",
     "source": "http://cgit.drupalcode.org/codetag"
+  },
+  "require": {
+    "drupal/ckeditor": "*"
   }
 }
