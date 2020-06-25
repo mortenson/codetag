@@ -3,6 +3,7 @@ type: module
 description: "Adds the CodeTag plugin to CKEditor, allowing editors to do inline code blocks."
 package: CKEditor
 core: 8.x
+core_version_requirement: ^8 || ^9
 
 dependencies:
   - ckeditor
